@@ -76,29 +76,29 @@ export default function HeroCarousel() {
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-gold z-10" />
 
       {/* Content */}
-      <div className="container relative z-10 pt-24">
+      <div className="container relative z-10 pt-20 md:pt-24 px-6 md:px-8">
         <div className="max-w-3xl">
-          <p className="text-gold font-medium tracking-widest uppercase text-sm mb-6 animate-fade-in-up opacity-0">
+          <p className="text-gold font-medium tracking-widest uppercase text-xs md:text-sm mb-4 md:mb-6 animate-fade-in-up opacity-0">
             North Atlanta&apos;s Premier Cabinet Showroom
           </p>
-          <h1 className="text-white mb-6 animate-fade-in-up opacity-0 animate-delay-100">
+          <h1 className="text-white mb-4 md:mb-6 animate-fade-in-up opacity-0 animate-delay-100 text-3xl md:text-5xl lg:text-6xl">
             Exceptional Cabinets.
             <br />
             <span className="text-gold">Timeless Craftsmanship.</span>
           </h1>
-          <p className="text-gray-300 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed animate-fade-in-up opacity-0 animate-delay-200">
+          <p className="text-gray-300 text-base md:text-lg lg:text-xl max-w-2xl mb-8 md:mb-10 leading-relaxed animate-fade-in-up opacity-0 animate-delay-200">
             For over 20 years, S2M Cabinets has delivered premium cabinetry and
             remodeling services to discerning homeowners, builders, and designers
             throughout North Atlanta.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up opacity-0 animate-delay-300">
-            <a href="tel:+16782176410" className="btn-gold">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up opacity-0 animate-delay-300">
+            <a href="tel:+16782176410" className="btn-gold justify-center sm:justify-start text-sm md:text-base py-4 md:py-3">
               <PhoneIcon />
               Call (678) 217-6410
             </a>
             <Link
               href="/showroom"
-              className="btn-secondary border-white text-white hover:bg-white hover:text-charcoal"
+              className="btn-secondary border-white text-white hover:bg-white hover:text-charcoal justify-center sm:justify-start text-sm md:text-base py-4 md:py-3"
             >
               Visit Showroom
             </Link>
@@ -107,7 +107,7 @@ export default function HeroCarousel() {
       </div>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 flex gap-3">
+      <div className="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 z-10 flex gap-2 md:gap-3">
         {heroImages.map((_, index) => (
           <button
             key={index}

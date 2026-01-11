@@ -91,24 +91,27 @@ export default function Header() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-ivory border-t border-stone/10">
-          <div className="container py-6 space-y-4">
+          <div className="container py-6 flex flex-col gap-1">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="block text-sm font-medium tracking-wide text-slate hover:text-charcoal transition-colors uppercase py-2"
+                style={{ display: 'block' }}
+                className="text-base font-medium tracking-wide text-slate hover:text-charcoal hover:bg-cream transition-colors uppercase py-4 px-4 rounded-sm border-b border-stone/10 last:border-b-0"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
               </Link>
             ))}
-            <a
-              href="tel:+16782176410"
-              className="btn-gold w-full justify-center mt-4"
-            >
-              <PhoneIcon />
-              Call (678) 217-6410
-            </a>
+            <div className="pt-4 mt-2">
+              <a
+                href="tel:+16782176410"
+                className="btn-gold w-full justify-center text-base py-4"
+              >
+                <PhoneIcon />
+                Call (678) 217-6410
+              </a>
+            </div>
           </div>
         </div>
       )}

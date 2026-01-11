@@ -13,28 +13,28 @@ export default function CTASection({
 
   return (
     <section
-      className={`section ${
+      className={`section py-12 md:py-16 lg:py-20 ${
         isDark ? "bg-charcoal text-ivory" : "bg-cream text-charcoal"
       }`}
     >
-      <div className="container text-center">
-        <h2 className={`font-display mb-4 ${isDark ? "text-white" : ""}`}>
+      <div className="container text-center px-6">
+        <h2 className={`font-display mb-3 md:mb-4 text-2xl md:text-3xl lg:text-4xl ${isDark ? "text-white" : ""}`}>
           {title}
         </h2>
-        <p className={`mb-8 mx-auto ${isDark ? "text-gray-300" : "text-slate"}`}>
+        <p className={`mb-6 md:mb-8 mx-auto text-sm md:text-base ${isDark ? "text-gray-300" : "text-slate"}`}>
           {subtitle}
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">
           <a
             href="tel:+16782176410"
-            className={isDark ? "btn-gold" : "btn-primary"}
+            className={`${isDark ? "btn-gold" : "btn-primary"} w-full sm:w-auto justify-center text-sm md:text-base py-4 md:py-3`}
           >
             <PhoneIcon />
             Call (678) 217-6410
           </a>
           <a
             href="/contact"
-            className={`btn-secondary ${
+            className={`btn-secondary w-full sm:w-auto justify-center text-sm md:text-base py-4 md:py-3 ${
               isDark ? "border-white text-white hover:bg-white hover:text-charcoal" : ""
             }`}
           >

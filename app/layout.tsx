@@ -3,6 +3,7 @@ import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import MobileActionBar from "./components/MobileActionBar";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-display",
@@ -63,8 +64,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${cormorant.variable} ${dmSans.variable} antialiased`}>
         <Header />
-        <main>{children}</main>
+        <main className="pb-20 lg:pb-0">{children}</main>
         <Footer />
+        <MobileActionBar />
       </body>
     </html>
   );

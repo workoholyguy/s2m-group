@@ -136,9 +136,9 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-cream p-8 md:p-12 rounded-sm h-fit">
-              <h3 className="font-display text-2xl mb-2">Send a Message</h3>
-              <p className="text-slate mb-8 text-sm">
+            <div className="bg-cream p-6 md:p-8 lg:p-12 rounded-sm h-fit">
+              <h3 className="font-display text-xl md:text-2xl mb-2">Send a Message</h3>
+              <p className="text-slate mb-6 md:mb-8 text-sm">
                 Fill out the form below and we&apos;ll get back to you within
                 one business day.
               </p>
@@ -272,7 +272,7 @@ export default function ContactPage() {
 
       {/* Map */}
       <section className="bg-cream">
-        <div className="aspect-[21/9] relative">
+        <div className="aspect-square md:aspect-[16/9] lg:aspect-[21/9] relative">
           <iframe
             src="https://maps.google.com/maps?q=4700+Atlanta+Hwy,+Alpharetta,+GA+30004&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
@@ -285,9 +285,9 @@ export default function ContactPage() {
             className="absolute inset-0"
           />
           {/* Overlay with directions button */}
-          <div className="absolute bottom-6 left-6 bg-ivory p-6 rounded-sm shadow-lg max-w-sm">
-            <h3 className="font-display text-xl mb-2">S2M Cabinets</h3>
-            <p className="text-slate text-sm mb-4">
+          <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-auto bg-ivory p-4 md:p-6 rounded-sm shadow-lg md:max-w-sm">
+            <h3 className="font-display text-lg md:text-xl mb-2">S2M Cabinets</h3>
+            <p className="text-slate text-sm mb-3 md:mb-4">
               4700 Atlanta Hwy
               <br />
               Alpharetta, GA 30004
@@ -296,7 +296,7 @@ export default function ContactPage() {
               href="https://www.google.com/maps/dir//4700+Atlanta+Hwy,+Alpharetta,+GA+30004"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary text-sm"
+              className="btn-primary text-sm w-full md:w-auto justify-center md:justify-start"
             >
               Get Directions
             </a>

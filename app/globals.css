@@ -336,3 +336,81 @@ a {
     rgba(28, 28, 28, 0.3) 100%
   );
 }
+
+/* =========================================
+   Mobile Optimizations
+   ========================================= */
+
+/* Improve touch targets */
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-gold {
+    min-height: 48px;
+    padding: 0.875rem 1.5rem;
+  }
+  
+  /* Reduce section padding on mobile */
+  .section {
+    padding: clamp(2.5rem, 8vw, 4rem) 0;
+  }
+  
+  /* Better form inputs on mobile */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+  }
+}
+
+/* Smooth scrolling for all devices */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Better focus states for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Improve text rendering on mobile */
+@media (max-width: 768px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  h1 {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+  
+  h3 {
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+  }
+}
+
+/* =========================================
+   Mobile Action Bar - Safe Area
+   ========================================= */
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+/* Ensure footer has extra padding on mobile to account for action bar */
+@media (max-width: 1024px) {
+  footer {
+    padding-bottom: 5rem;
+  }
+}

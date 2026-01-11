@@ -27,18 +27,18 @@ export default function Footer() {
     <footer className="bg-charcoal text-ivory">
       {/* CTA Banner */}
       <div className="bg-gold">
-        <div className="container py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="container py-6 md:py-8 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 text-center md:text-left">
           <div>
-            <h3 className="font-display text-2xl md:text-3xl text-charcoal">
+            <h3 className="font-display text-xl md:text-2xl lg:text-3xl text-charcoal">
               Ready to Transform Your Space?
             </h3>
-            <p className="text-charcoal/80 mt-1">
+            <p className="text-charcoal/80 mt-1 text-sm md:text-base">
               Visit our showroom or call us today.
             </p>
           </div>
           <a
             href="tel:+16782176410"
-            className="btn-primary bg-charcoal hover:bg-graphite whitespace-nowrap"
+            className="btn-primary bg-charcoal hover:bg-graphite whitespace-nowrap w-full md:w-auto justify-center md:justify-start"
           >
             <PhoneIcon />
             (678) 217-6410
@@ -47,54 +47,54 @@ export default function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="container" style={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+      <div className="container" style={{ paddingTop: '2.5rem', paddingBottom: '2rem' }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 lg:gap-16">
           {/* Brand */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-4 mb-8">
+          <div className="lg:col-span-1 text-center md:text-left">
+            <Link href="/" className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8 justify-center md:justify-start">
               <Image
                 src="/s2m_logo_upscaled.png"
                 alt="S2M Cabinets"
-                width={55}
-                height={55}
-                className="object-contain brightness-0 invert"
+                width={45}
+                height={45}
+                className="object-contain brightness-0 invert md:w-[55px] md:h-[55px]"
               />
-              <span className="font-display text-2xl tracking-wide">
+              <span className="font-display text-xl md:text-2xl tracking-wide">
                 S2M Cabinets
               </span>
             </Link>
-            <p className="text-gray-400 text-base leading-relaxed mb-8">
+            <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-6 md:mb-8">
               Premium cabinets and remodeling services serving North Atlanta for
               over 20 years. Quality craftsmanship, exceptional service.
             </p>
             {/* Social Links */}
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-4 md:gap-5 justify-center md:justify-start">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-graphite flex items-center justify-center hover:bg-gold transition-colors group"
+                  className="w-11 h-11 md:w-12 md:h-12 rounded-full bg-graphite flex items-center justify-center hover:bg-gold transition-colors group"
                   aria-label={`Follow us on ${social.name}`}
                 >
-                  <social.icon className="w-6 h-6 text-gray-400 group-hover:text-charcoal transition-colors" />
+                  <social.icon className="w-5 h-5 md:w-6 md:h-6 text-gray-400 group-hover:text-charcoal transition-colors" />
                 </a>
               ))}
             </div>
           </div>
 
           {/* Navigation */}
-          <div>
-            <h4 className="text-xl font-medium tracking-wider uppercase mb-8 text-gold">
+          <div className="text-center md:text-left">
+            <h4 className="text-lg md:text-xl font-medium tracking-wider uppercase mb-4 md:mb-8 text-gold">
               Navigation
             </h4>
-            <ul className="space-y-4">
+            <ul className="space-y-3 md:space-y-4">
               {navigation.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-400 hover:text-white transition-colors text-lg"
+                    className="text-gray-400 hover:text-white transition-colors text-base md:text-lg"
                   >
                     {item.name}
                   </Link>
@@ -104,15 +104,15 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
-            <h4 className="text-xl font-medium tracking-wider uppercase mb-8 text-gold">
+          <div className="text-center md:text-left">
+            <h4 className="text-lg md:text-xl font-medium tracking-wider uppercase mb-4 md:mb-8 text-gold">
               Contact
             </h4>
-            <ul className="space-y-4 text-lg text-gray-400">
+            <ul className="space-y-3 md:space-y-4 text-base md:text-lg text-gray-400">
               <li>
                 <a
                   href="tel:+16782176410"
-                  className="hover:text-white transition-colors flex items-center gap-3"
+                  className="hover:text-white transition-colors flex items-center gap-3 justify-center md:justify-start"
                 >
                   <PhoneIcon />
                   (678) 217-6410
@@ -121,41 +121,26 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:S2mgrp@gmail.com"
-                  className="hover:text-white transition-colors flex items-center gap-3"
+                  className="hover:text-white transition-colors flex items-center gap-3 justify-center md:justify-start"
                 >
                   <EmailIcon />
                   S2mgrp@gmail.com
                 </a>
               </li>
             </ul>
-            {/* Social Links - Mobile visible */}
-            <div className="flex items-center gap-4 mt-8 lg:hidden">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-gold transition-colors flex items-center gap-2 text-base"
-                >
-                  <social.icon className="w-5 h-5" />
-                  {social.name}
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Location */}
-          <div>
-            <h4 className="text-xl font-medium tracking-wider uppercase mb-8 text-gold">
+          <div className="text-center md:text-left">
+            <h4 className="text-lg md:text-xl font-medium tracking-wider uppercase mb-4 md:mb-8 text-gold">
               Showroom
             </h4>
-            <address className="text-lg text-gray-400 not-italic leading-relaxed">
+            <address className="text-base md:text-lg text-gray-400 not-italic leading-relaxed">
               4700 Atlanta Hwy
               <br />
               Alpharetta, GA 30004
               <br />
-              <span className="text-gold mt-4 inline-block">
+              <span className="text-gold mt-3 md:mt-4 inline-block">
                 Serving North Atlanta
               </span>
             </address>
@@ -163,8 +148,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-graphite mt-16 pt-10 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <p className="text-gray-400 text-sm">
+        <div className="border-t border-graphite mt-10 md:mt-16 pt-6 md:pt-10 flex flex-col items-center gap-4 md:gap-6 text-center">
+          <p className="text-gray-400 text-xs md:text-sm">
             © {new Date().getFullYear()} S2M Cabinets. All rights reserved. Powered by{" "}
             <a
               href="https://avidtechusa.com/"
@@ -175,25 +160,9 @@ export default function Footer() {
               Avid Tech Usa
             </a>
           </p>
-          <div className="flex items-center gap-8">
-            <div className="hidden sm:flex items-center gap-5">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-gold transition-colors"
-                  aria-label={`Follow us on ${social.name}`}
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
-            <p className="text-gray-400 text-sm">
-              20+ Years of Excellence in Cabinet & Remodeling
-            </p>
-          </div>
+          <p className="text-gray-400 text-xs md:text-sm">
+            20+ Years of Excellence in Cabinet & Remodeling
+          </p>
         </div>
       </div>
     </footer>
