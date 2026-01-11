@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+You are building an MVP website for a luxury cabinet and remodeling showroom called “S2M Cabinets”.
 
-## Getting Started
+Brand tone: luxury, quiet confidence, minimal, professional.
+Primary CTA: phone calls.
+No pricing anywhere.
 
-First, run the development server:
+Business details:
+- Name: S2M Cabinets
+- Address: 4700 Atlanta Hwy, Alpharetta, GA 30004
+- Phone: (678) 217-6410
+- Email: S2mgrp@gmail.com
+- Service area: North Atlanta
+- Experience: 20+ years in business
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Customers:
+Homeowners, builders, designers, flippers.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Products:
+Stock and custom cabinets, countertops (granite, marble),
+waterproof vinyl flooring, tile, mosaic tile, accent walls,
+wood panels, vanities, cabinet hardware, installation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Services:
+Full kitchen remodels, bathroom remodeling, basement finishing.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Showroom:
+Large, walk-in friendly showroom with full kitchen displays,
+samples, and a design desk.
 
-## Learn More
+Tasks:
+1. Generate a clean, modern website structure with the following pages:
+   - Home
+   - Cabinets
+   - Remodeling Services
+   - Showroom
+   - Contact
 
-To learn more about Next.js, take a look at the following resources:
+2. Write concise, confident copy for each section.
+3. Emphasize experience, fast turnaround, and ability to handle complex projects.
+4. Place phone-based CTAs prominently on every page.
+5. Optimize copy for local SEO (North Atlanta, Alpharetta).
+6. Keep layout minimal and conversion-focused.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Do not include pricing.
+Do not use marketing hype language.
